@@ -4,9 +4,9 @@ import streamlit as st
 
 car_data = pd.read_csv('notebooks/vehicles_us.csv') # leer los datos
 
-hist_button = st.button('Construir histograma') # crear un botón
+build_histogram = st.checkbox('Construir un histograma')
 
-if hist_button: # al hacer clic en el botón
+if build_histogram: # si la casilla de verificación está seleccionada
     # escribir un mensaje
     st.write('Creación de un histograma para el conjunto de datos de anuncios de venta de coches')
     
