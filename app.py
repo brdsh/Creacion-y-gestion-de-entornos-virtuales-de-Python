@@ -11,7 +11,7 @@ if build_histogram: # si la casilla de verificación está seleccionada
     st.write('Creación de un histograma para el conjunto de datos de anuncios de venta de coches')
     
     # crear un histogram
-    fig = px.histogram(car_data, x="odometer")
+    fig = px.scatter(car_data, x="odometer", y="price")
     
     # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
